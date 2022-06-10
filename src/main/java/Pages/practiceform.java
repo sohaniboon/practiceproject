@@ -3,8 +3,10 @@ package Pages;
 import common.browserini;
 import common.commonfunction;
 import common.utility;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -26,9 +28,11 @@ public class practiceform extends browserini {
     @FindBy(xpath="//label[@for=\"hobbies-checkbox-1\"]") WebElement hobbies;
     @FindBy(id="currentAddress") WebElement address;
     @FindBy(xpath="//input[@id=\"uploadPicture\"]") WebElement upload;
+
     @FindBy(xpath = "//div[text()=\"Select State\"]") WebElement state;
     @FindBy(id="submit") WebElement submitbtn;
    @FindBy(xpath="//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[3]/span/div/div[1]") WebElement alert;
+
 
 
 public practiceform(){
@@ -84,6 +88,7 @@ public void practiceform1(){
                upload.sendKeys("C:\\Users\\iBoon Technologies\\Pictures\\Screenshots");
           }
 
+
            if(alert.isDisplayed()){
                alert.click();
            }
@@ -99,6 +104,7 @@ public void practiceform1(){
               utility.scroll1();
               submitbtn.click();
           }
+
       }
 
 
