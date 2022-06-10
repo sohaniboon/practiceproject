@@ -10,14 +10,9 @@ import org.openqa.selenium.support.PageFactory;
 import java.time.Duration;
 
 public class Textbox extends browserini {
-    @FindBy(id="userName")
-    WebElement fullname;
-
-    @FindBy(id="userEmail")
-    WebElement Mail;
-
-    @FindBy(id="permanentAddress")
-     WebElement Address;
+    @FindBy(id="userName") WebElement fullname;
+    @FindBy(id="userEmail") WebElement Mail;
+    @FindBy(id="permanentAddress") WebElement Address;
 
 
   public Textbox(){

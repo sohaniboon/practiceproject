@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class Radiobuttontest extends browserini {
    public Homepage home;
    public Radiobuttons rdbtn;
-    @Test
+    @Test(enabled = false)
     public void TC2(){
         home=new Homepage();
        rdbtn=new Radiobuttons();

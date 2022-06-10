@@ -9,11 +9,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Radiobuttons extends browserini {
 
-   @FindBy(xpath="//label[@for='yesRadio']")
-    WebElement yes;
-
-   @FindBy(xpath="//input[@id=\"noRadio\"]")
-   WebElement no;
+   @FindBy(xpath="//label[@for='yesRadio']") WebElement yes;
+   @FindBy(xpath="//input[@id=\"noRadio\"]") WebElement no;
 public Radiobuttons(){
     PageFactory.initElements(driver,this);
 

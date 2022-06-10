@@ -16,6 +16,10 @@ public class utility extends browserini{
 
     }
 
+    public static void scroll1(){
+        JavascriptExecutor js= (JavascriptExecutor)driver;
+        js.executeScript("window.scrollBy(0,200)");
 
+    }
 
 }
