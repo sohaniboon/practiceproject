@@ -13,11 +13,8 @@ public class Homepage extends browserini {
     @FindBy(xpath="//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[2]/span/div/div[1]") WebElement form;
     @FindBy(xpath="//span[text()=\"Practice Form\"]") WebElement practiceform;
 
-    @FindBy(xpath="//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[2]/span/div/div[1]")
-    WebElement form;
 
-    @FindBy(xpath="//span[text()=\"Practice Form\"]")
-    WebElement practiceform;
+
 
     public Homepage(){
         PageFactory.initElements(driver,this);

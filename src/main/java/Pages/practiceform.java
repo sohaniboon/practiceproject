@@ -75,7 +75,6 @@ public void practiceform1(){
                subject.sendKeys("english");
            }*/
           utility.scroll(hobbies);
-          commonfunction.explicit();
            if(hobbies.isEnabled()){
                hobbies.click();
            }
@@ -84,7 +83,6 @@ public void practiceform1(){
                address.sendKeys("okokokok");
            }
            if(upload.isDisplayed()){
-               //upload.click();
                upload.sendKeys("C:\\Users\\iBoon Technologies\\Pictures\\Screenshots");
           }
 
