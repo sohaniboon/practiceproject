@@ -37,7 +37,7 @@ public class utility extends reports{
         File destfile =new File(destinationpath);
         try{
             FileUtils.copyFile(srcfile,destfile);
-        }catch (IOException e){
+        }catch (Exception e){
             e.printStackTrace();
         }
 return datename+"png";

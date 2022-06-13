@@ -58,26 +58,30 @@ public class practiceform extends reports {
     }
 
     public void practiceform1() {
-        try {
+
             String p = driver.getCurrentUrl();
             if (p.equalsIgnoreCase(property.getProperty("practiceformurl"))) {
                 if (firstname.isDisplayed()) {
                     firstname.sendKeys("Sohan");
-
                 }
+
                 if (lastname.isDisplayed()) {
                     lastname.sendKeys("Sarode");
+
                 }
                 if (email.isDisplayed()) {
                     email.sendKeys("sohan.iboon@gmail.com");
+
                 }
                 utility.scroll(male);
                 if (male.isEnabled()) {
                     male.click();
+
                 }
                 utility.scroll(usernumber);
                 if (usernumber.isDisplayed()) {
                     usernumber.sendKeys("1234567890");
+
                 }
 
                 if (date.isDisplayed()) {
@@ -87,15 +91,14 @@ public class practiceform extends reports {
                     year.click();
                     commonfunction.select(year, "1997");
                     day.click();
+
                 }
 
-
-           /*if (subject.isDisplayed()){
-               subject.sendKeys("english");
-           }*/
                 utility.scroll(hobbies);
                 if (hobbies.isEnabled()) {
                     hobbies.click();
+
+
                 }
                 utility.scroll(address);
                 if (address.isDisplayed()) {
@@ -111,23 +114,21 @@ public class practiceform extends reports {
                 }
 
 
-         /*  if (state.isDisplayed()){
-               state.click();
-               driver.findElement(By.xpath("//div[text()=\"Haryana\"]")).click();
-           }*/
                 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
                 utility.scroll(submitbtn);
                 if (submitbtn.isDisplayed()) {
                     utility.scroll1();
                     submitbtn.click();
                 }
-
+              reports.passtest("pass");
+            }else{
+                reports.failtest("test fail");
             }
 
 
-        } catch (Exception e) {
-            reports.failtest("fail");
-        }
+
+
+
 
 
     }

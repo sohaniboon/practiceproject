@@ -13,7 +13,7 @@ public class practiceformtest extends reports {
 
     @Test(description="verify form test is right")
     public  void TC3(){
-        report.startTest("verify form test is right");
+        reports.starttest("verify form test is right");
         home =new Homepage();
         prac =new practiceform();
         home.leftmenu("form");
