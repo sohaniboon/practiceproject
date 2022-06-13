@@ -1,5 +1,7 @@
 package common;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -13,6 +15,9 @@ import java.util.Properties;
 public class browserini {
     public static WebDriver driver;
     public static Properties property;
+    public static String filepath;
+    public static ExtentReports report;
+    public static ExtentTest test;
 
     public void readproperty(){
         try{

@@ -11,10 +11,11 @@ public class Textboxtest1 extends browserini {
     public Textbox t;
     @Test(enabled = false)
     public void TC1(){
-        home=new Homepage();
-        home.leftmenu("Textbox");
-        t=new Textbox();
-        t.text();
+
+            home = new Homepage();
+            home.leftmenu("Textbox");
+            t = new Textbox();
+            t.text();
 
 
     }
