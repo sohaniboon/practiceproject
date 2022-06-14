@@ -1,18 +1,12 @@
 package Pages;
 
-import common.browserini;
+
 import common.commonfunction;
 import common.reports;
 import common.utility;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import java.io.IOException;
 import java.time.Duration;
 
 public class practiceform extends reports {
@@ -35,17 +29,12 @@ public class practiceform extends reports {
     WebElement year;
     @FindBy(xpath = "//div[@aria-label=\"Choose Thursday, February 13th, 1997\"]")
     WebElement day;
-    @FindBy(xpath = "//div[@class=\"subjects-auto-complete__value-container subjects-auto-complete__value-container--is-multi css-1hwfws3\"]")
-    WebElement subject;
     @FindBy(xpath = "//label[@for=\"hobbies-checkbox-1\"]")
     WebElement hobbies;
     @FindBy(id = "currentAddress")
     WebElement address;
     @FindBy(xpath = "//input[@id=\"uploadPicture\"]")
     WebElement upload;
-
-    @FindBy(xpath = "//div[text()=\"Select State\"]")
-    WebElement state;
     @FindBy(id = "submit")
     WebElement submitbtn;
     @FindBy(xpath = "//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[3]/span/div/div[1]")

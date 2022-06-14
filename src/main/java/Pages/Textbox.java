@@ -1,6 +1,7 @@
 package Pages;
 
 import common.browserini;
+import common.reports;
 import common.utility;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -9,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.time.Duration;
 
-public class Textbox extends browserini {
+public class Textbox extends reports {
     @FindBy(id="userName") WebElement fullname;
     @FindBy(id="userEmail") WebElement Mail;
     @FindBy(id="permanentAddress") WebElement Address;
@@ -28,6 +29,9 @@ public class Textbox extends browserini {
           Mail.sendKeys("sar@gmail.com");
           utility.scroll(Address);
           Address.sendKeys("abcd");
+          reports.passtest("pass");
+      }else {
+          reports.failtest("fail");
       }
    }
 }
